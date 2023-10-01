@@ -5,44 +5,89 @@
     font-family: 'Roboto Slab', serif;
 }
 
-
 body {
-    background-color: #000;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     font-size: 18px;
     font-weight: 300;
 }
 
+.content-items-carrusel {
+    position: relative;
+}
 
+.content-slogan {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    top: -100px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.items-carrusel {
+    height: 500px;
+}
 
 .content-heart {
     display: flex;
-    padding-top: 100px;
+    position: relative;
+    margin-top: 200px;
     align-items: center;
     justify-content: center;
-    z-index: 99;
+}
 
+
+.description-heart {
+    position: absolute;
+    text-align: center; 
+    margin-bottom: 30px;
+}
+
+.title-heard {
+    font-size: 15px;
+    font-style: italic;
+    color: white;
+    
 }
 
 .heart {
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
     background-color: red;
     position: relative;
     transform: rotate(45deg);
     animation: palpitar 1.0s linear infinite alternate;
+    opacity: 0.8;
+}
+
+.heart::before {
+    content: "";
+    position: absolute;
+    height: 100px;
+    width: 100px;
+   background: red; 
+    right: 50%;
+    border-radius: 50%;
+    box-shadow: 20px 20px 150px #f20044;
 
 }
 
-.description-heart {
+.heart::after {
+    content: "";
     position: absolute;
-    margin-bottom: 50px;
-    text-align: center;
-} 
-    .title-heard {
-        font-size: 18px;
-        font-style: italic;
-    } 
+    height: 100px;
+    width: 100px;
+    background: red; 
+    top: -50%;
+    border-radius: 50%;
+    box-shadow: 20px 20px 150px #f20044;
+}
 
 @keyframes palpitar {
     0% {
@@ -58,29 +103,6 @@ body {
     }
 }
 
-.heart::before {
-    content: "";
-    position: absolute;
-    height: 150px;
-    width: 150px;
-    background: red;
-    right: 50%;
-    border-radius: 50%;
-    box-shadow: 20px 20px 150px #f20044;
-
-}
-
-.heart::after {
-    content: "";
-    position: absolute;
-    height: 150px;
-    width: 150px;
-    background: red;
-    top: -50%;
-    border-radius: 50%;
-    box-shadow: 20px 20px 150px #f20044;
-
-}
 
 
 #particles-js {
@@ -90,46 +112,43 @@ body {
     z-index: -1;
 }
 
-.card-logo {
+  .card-logo {
     width: 60%;
     max-width: 1200px;
     border: 1px solid #ededed;
-    
     background-color: #000;
     background-position: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 0px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     padding: 20px 30px;
     position: relative;
     z-index: 99;
-    opacity: .80;
+    opacity: .70;
     -webkit-box-shadow: 4px 2px 21px 7px rgba(255, 255, 255, 0.56);
     -moz-box-shadow: 4px 2px 21px 7px rgba(255, 255, 255, 0.56);
     box-shadow: 4px 2px 21px 7px rgba(255, 255, 255, 0.56);
-}
+}        
 
-.card-logo h1 {
+  .card-logo h1 {
     text-align: center;
     color: white;
     font-style: italic;
     font-weight: 600;
-}
+}  
 
 .content-img {
-    width: 350px;
-    height: 350px;
+    width: 100%;
+    height:auto;
     overflow: hidden;
     margin: 16px 16px;
     -webkit-box-shadow: 4px 2px 21px 7px rgba(255, 255, 255, 0.56);
     -moz-box-shadow: 4px 2px 21px 7px rgba(255, 255, 255, 0.56);
     box-shadow: 4px 2px 21px 7px rgba(255, 255, 255, 0.56);
 }
-
+ 
 .content-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-
 }
