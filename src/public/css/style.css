@@ -12,6 +12,18 @@ body {
     font-weight: 300;
 }
 
+.title-projects {
+    margin-top: 25px;
+    text-align: center;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.nu-span {
+    color: rgb(46, 149, 255);
+    font-size: 50px;
+}
+
 .header {
     position: fixed;
     top: 0;
@@ -143,7 +155,8 @@ body {
 .heart {
     height: 100px;
     width: 100px;
-    background-color: red;
+  /*   background-color: red; */
+  background: rgb(46, 149, 255);
     position: relative;
     transform: rotate(45deg);
     animation: palpitar 1.0s linear infinite alternate;
@@ -155,10 +168,11 @@ body {
     position: absolute;
     height: 100px;
     width: 100px;
-    background: red;
+    /* background: red; */
+    background: rgb(46, 149, 255);
     right: 50%;
     border-radius: 50%;
-    box-shadow: 20px 20px 150px #f20044;
+   /*  box-shadow: 20px 20px 150px #f20044; */
 
 }
 
@@ -167,10 +181,11 @@ body {
     position: absolute;
     height: 100px;
     width: 100px;
-    background: red;
+    /* background: red; */
+    background: rgb(46, 149, 255);
     top: -50%;
     border-radius: 50%;
-    box-shadow: 20px 20px 150px #f20044;
+    /* box-shadow: 20px 20px 150px #f20044; */
 }
 
 @keyframes palpitar {
