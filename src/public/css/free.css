@@ -1,6 +1,4 @@
-
-
-@media screen and  (min-width:862px) {
+@media screen and (min-width:862px) {
     .card-logo {
         width: 70%;
         max-width: 1200px;
@@ -17,12 +15,58 @@
         -webkit-box-shadow: 4px 2px 21px 7px rgba(255, 255, 255, 0.56);
         -moz-box-shadow: 4px 2px 21px 7px rgba(255, 255, 255, 0.56);
         box-shadow: 4px 2px 21px 7px rgba(255, 255, 255, 0.56);
-    } 
+    }
 
 }
 
+@media screen and (max-width:950px) {
+    .header label {
+        display: initial;
+    }
 
-@media screen and (min-width:690px) and  (max-width:861px) {
+    .header {
+        padding: 20px 10%;
+    }
+
+    .header .navigation {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgb(1, 1, 1, 0.7);
+        display: none;
+    }
+
+    .header .navigation ul li {
+        width: 100%;
+    }
+
+    .header .navigation ul li a {
+        padding: 8px 30px 8px 10%;
+    }
+
+    .header .navigation ul li ul {
+        position: relative;
+        width: 100%;
+        left: 0;
+    }
+
+    .header .navigation ul li ul li {
+        background-color: rgb(1, 1, 1, 0.7);
+    }
+
+    .header .navigation ul li ul li ul {
+        position: relative;
+        width: 100%;
+        left: 0;
+    }
+
+    #toggle:checked~.navigation {
+        display: block;
+    }
+}
+
+@media screen and (min-width:690px) and (max-width:861px) {
     .card-logo h1 {
         text-align: center;
         color: white;
@@ -33,7 +77,7 @@
 }
 
 
-@media screen and (min-width:625px) and   (max-width:690px) {
+@media screen and (min-width:625px) and (max-width:690px) {
     .card-logo h1 {
         text-align: center;
         color: white;
@@ -43,7 +87,7 @@
     }
 }
 
-@media screen and (min-width:538px) and   (max-width:625px) {
+@media screen and (min-width:538px) and (max-width:625px) {
     .card-logo h1 {
         text-align: center;
         color: white;
@@ -54,7 +98,7 @@
 }
 
 
-@media screen and (min-width:494px)  and   (max-width:538px) {
+@media screen and (min-width:494px) and (max-width:538px) {
     .card-logo h1 {
         text-align: center;
         color: white;
@@ -64,7 +108,7 @@
     }
 }
 
-@media screen and   (max-width:494px) {
+@media screen and (max-width:494px) {
     .card-logo h1 {
         text-align: center;
         color: white;

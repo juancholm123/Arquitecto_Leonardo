@@ -12,6 +12,87 @@ body {
     font-weight: 300;
 }
 
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(1, 1, 1, 0.7);
+    padding: 0px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo-menu {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+}
+
+.navigation ul {
+    list-style: none;
+}
+
+.header .navigation ul li {
+    float: left;
+    position: relative;
+}
+
+.header .navigation ul li a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    transition: all .2s ease;
+}
+
+.header .navigation ul li a:hover {
+    background-color: #685cfe;
+}
+
+.header .navigation ul li ul {
+    position: absolute;
+    right: 0;
+    width: 300px;
+    background-color: rgba(1, 1, 1, 0.7);
+    display: none;
+}
+
+.header .navigation ul li ul li a {
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.header .navigation ul li ul li ul {
+    position: absolute;
+    top: 0;
+    right: 300px;
+}
+
+.header .navigation ul li ul li {
+    width: 100%;
+}
+
+.header .navigation ul li:hover>ul {
+    display: initial;
+}
+
+#toggle, .header label {
+    display: none;
+    cursor: pointer; 
+} 
+
+
+.menu{
+    width: 45px;
+    height: 35px;
+}
+
+
 .content-items-carrusel {
     position: relative;
 }
@@ -31,7 +112,9 @@ body {
 
 
 .items-carrusel {
-    height: 500px;
+    height: 600px;
+
+    object-fit: cover;
 }
 
 .content-heart {
@@ -45,7 +128,7 @@ body {
 
 .description-heart {
     position: absolute;
-    text-align: center; 
+    text-align: center;
     margin-bottom: 30px;
 }
 
@@ -53,7 +136,7 @@ body {
     font-size: 15px;
     font-style: italic;
     color: white;
-    
+
 }
 
 .heart {
@@ -71,7 +154,7 @@ body {
     position: absolute;
     height: 100px;
     width: 100px;
-   background: red; 
+    background: red;
     right: 50%;
     border-radius: 50%;
     box-shadow: 20px 20px 150px #f20044;
@@ -83,7 +166,7 @@ body {
     position: absolute;
     height: 100px;
     width: 100px;
-    background: red; 
+    background: red;
     top: -50%;
     border-radius: 50%;
     box-shadow: 20px 20px 150px #f20044;
@@ -112,11 +195,11 @@ body {
     z-index: -1;
 }
 
-  .card-logo {
+.card-logo {
     width: 60%;
     max-width: 1200px;
     border: 1px solid #ededed;
-    background-color: #000;
+    background-color: rgba(1, 1, 1, 0.7);
     background-position: center;
     margin-left: auto;
     margin-right: auto;
@@ -124,29 +207,29 @@ body {
     padding: 20px 30px;
     position: relative;
     z-index: 99;
-    opacity: .70;
+    /* opacity: .70; */
     -webkit-box-shadow: 4px 2px 21px 7px rgba(255, 255, 255, 0.56);
     -moz-box-shadow: 4px 2px 21px 7px rgba(255, 255, 255, 0.56);
     box-shadow: 4px 2px 21px 7px rgba(255, 255, 255, 0.56);
-}        
+}
 
-  .card-logo h1 {
+.card-logo h1 {
     text-align: center;
     color: white;
     font-style: italic;
     font-weight: 600;
-}  
+}
 
 .content-img {
     width: 100%;
-    height:auto;
+    height: auto;
     overflow: hidden;
     margin: 16px 16px;
     -webkit-box-shadow: 4px 2px 21px 7px rgba(255, 255, 255, 0.56);
     -moz-box-shadow: 4px 2px 21px 7px rgba(255, 255, 255, 0.56);
     box-shadow: 4px 2px 21px 7px rgba(255, 255, 255, 0.56);
 }
- 
+
 .content-img img {
     width: 100%;
     height: 100%;
