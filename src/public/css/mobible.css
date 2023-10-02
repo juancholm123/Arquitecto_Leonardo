@@ -1,0 +1,16 @@
+@media screen and (max-width:768px) {
+
+    .content-proyects {
+        display: grid;
+        grid-template-columns: 100%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .content-img {
+        width: 100%;
+        height: auto;
+        padding: 0px 5px;
+        margin-bottom: 16px;
+    }
+}
