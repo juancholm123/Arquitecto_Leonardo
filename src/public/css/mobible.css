@@ -1,13 +1,9 @@
 @media screen and (max-width:768px) {
 
-   .content-proyects {
+    .content-proyects {
         display: grid;
         grid-template-columns: 100%;
-       /*  margin: 80px;
-        gap: 25px; */
-       
-       
-       
-        
-    } 
+        margin: 10px;
+        gap: 25px;
+    }
 }
