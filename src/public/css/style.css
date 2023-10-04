@@ -140,7 +140,7 @@ body {
 .content-proyects {
     display: grid;
     grid-template-columns: 50% 50%;
-    margin: 250px;
+    margin:50px 250px;
     gap: 25px;
 }
 
